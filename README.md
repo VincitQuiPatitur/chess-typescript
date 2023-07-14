@@ -1,46 +1,40 @@
-# Getting Started with Create React App
+# Игра шахматы на TypeScript
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Цель
 
-## Available Scripts
+Познакомиться с TypeScript посредством написания игры в шахматы с использованием ООП.
 
-In the project directory, you can run:
+### Концепция
 
-### `npm start`
+Приложение представляет собой стандартную доску с шахматными фигурами. Игроки делают ход по очереди, на выполнение хода у игрока есть 300 секунд. При нажатии на шахматную фигуру, приложение показывает всевозожные ходы, а также при возможности "съесть" фигуру врага, подсвечивает её поле. Над шахматной доской отображается чей сейчас ход. Справа от доски находятся два списка выбывших фигур, который пополняется по мере игры.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Технологии
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* CRA
+* React
+* TypeScript
+* OOP
 
-### `npm test`
+### Скрин приложения 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![src/assets/img.png](src/assets/img.png)
 
-### `npm run build`
+### Запуск приложения
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Скачать репозиторий
+2. Установить зависимости проекта с помощью `npm install`
+3. Запустите проект командой `npm start`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Идеи по доработке
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Исправить баг первого хода пешки, если перед ней стоит фигура
+* Выводить сообщение об окончании игры
+* Запускать и останавливать таймер по кнопке
+* Редизайн таймера
+* Подсчёт количества ходов
+* Возможность сделать один шаг назад и отменить его (то есть сделать шаг вперёд)
+* Добавить условия для шаха и мата
 
-### `npm run eject`
+### Возможно невозможно
+* Усовершенствовать приложение: объединить данный проект с [chat-websocket](https://github.com/VincitQuiPatitur/chat-websocket) и реализовать игру в комнатах в режиме реального времени (использовать WebSocket)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
